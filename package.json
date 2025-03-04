@@ -1,0 +1,22 @@
+{
+  "name": "F4B_health_check",
+  "private": true,
+  "workspaces": [
+    "front",
+    "back"
+  ],
+  "version": "1.0.0",
+  "description": "a microservice to handle health check of the convertion funnel",
+  "main": "index.js",
+  "author": "TOLSBLK",
+  "license": "MIT",
+  "scripts": {
+    "dev": "concurrently \"yarn workspace back start:dev\" \"yarn workspace front dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  },
+  "dependencies": {
+    "pm2": "^5.4.3"
+  }
+}
